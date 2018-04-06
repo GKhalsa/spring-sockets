@@ -1,13 +1,17 @@
 package com.sunny.springsockets.model;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
-@AllArgsConstructor
+@NoArgsConstructor
 public class Call {
     private String name;
     private String email;
-    private String date;
+    private String time;
+
+    public Call(String name, String email, String time) {
+        this.name = name;
+        this.email = email;
+        this.time = time;
+    }
 }

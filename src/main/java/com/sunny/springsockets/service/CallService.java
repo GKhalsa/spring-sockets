@@ -1,7 +1,24 @@
 package com.sunny.springsockets.service;
 
-/**
- * Created by Gurusundesh on 4/6/18.
- */
-public class CallService {
+import com.sunny.springsockets.controller.CallController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class CallService extends Thread {
+    @Autowired
+    CallController callController;
+
+    @Override
+    public void run() {
+        while (true) {
+            try {
+                callController.sendCall();
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
 }
