@@ -14,6 +14,7 @@ public class CallService extends Thread {
         while (true) {
             try {
                 callController.sendCall();
+                System.out.println("fire!!");
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -22,3 +23,22 @@ public class CallService extends Thread {
     }
 
 }
+//@Component
+//class CallService extends Thread {
+//
+//    @Autowired
+//    CallController messageController;
+//
+//    @Override
+//    public void run() {
+//        while (true) {
+//            try {
+//                messageController.fireMessage();
+//                Thread.sleep(2000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//            System.out.println("random stuff");
+//        }
+//    }
+//}
