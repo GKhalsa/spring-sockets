@@ -31,34 +31,3 @@ public class Call {
         this.time = time;
     }
 }
-////@Component
-//public class Call {
-//
-//    private String from;
-//    private String text;
-//    private String time;
-//
-//    public String getText() {
-//        return text;
-//    }
-//
-//    public String getTime() {
-//        return time;
-//    }
-//
-//    public String getFrom() {
-//        return from;
-//    }
-//
-//    public void setText(String text) {
-//        this.text = text;
-//    }
-//
-//    public void setTime(String time) {
-//        this.time = time;
-//    }
-//
-//    public void setFrom(String from) {
-//        this.from = from;
-//    }
-//}

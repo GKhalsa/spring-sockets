@@ -17,14 +17,3 @@ public class Runner {
     }
 
 }
-//@Component
-//public class Runner {
-//    @Autowired
-//    CallService initiateMessageService;
-//
-//    @PostConstruct
-//    public void sendMessages() {
-//        initiateMessageService.start();
-//    }
-//
-//}
